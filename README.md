@@ -1,6 +1,12 @@
-Source:
+
+Source: JavaScript Mastery
 https://www.youtube.com/watch?v=khJlrj3Y6Ls
+
 https://github.com/adrianhajdin/project_corona_tracker
+
+react js, react hook, chartjs, counterup
+--------------------------------------------
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -3,8 +3,7 @@ import {
     Card,
     CardContent,
     Typography,
-    Grid,
-    StylesProvider,
+    Grid,    
 } from "@material-ui/core";
 
 import CountUp from 'react-countup';
@@ -15,7 +14,7 @@ import  styles  from "./Cards.module.css";
 //api'den gelen değişken adlarıyla aynı olmaz zorunda
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     //console.log(props);
-    console.log("debug yap:" + confirmed);
+  //  console.log("debug yap:" + confirmed);
     if (!confirmed) {
         return "Loading...";
     }
@@ -26,7 +25,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infected)} >
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
-                            Infected
+                            Total Infected
             </Typography>
                         <Typography variant="h5">
                             <CountUp start={0} end={confirmed.value} duration={2.5}
@@ -42,7 +41,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
-                            Recovered
+                           Total Recovered
             </Typography>
                         <Typography variant="h5">
                             <CountUp start={0} end={recovered.value} duration={2.5}
@@ -58,7 +57,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)} >
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
-                            Death
+                            Total Death
             </Typography>
                         <Typography variant="h5">
                             <CountUp start={0} end={deaths.value} duration={2.5}
