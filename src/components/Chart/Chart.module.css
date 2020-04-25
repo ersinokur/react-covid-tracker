@@ -4,3 +4,11 @@
     /* grafiği büyümek için */
     width: 85% 
 }
+
+/* mobil cihazlar için daha fazla responsive */
+@media (max-width: 770px){
+    .container {
+        width: 100%;
+    }
+   
+}

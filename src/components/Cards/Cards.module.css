@@ -18,3 +18,10 @@ margin: 0 2% !important;
     border-bottom: 10px solid rgba(255, 0, 0, 0.5);
 }
 
+/* mobil cihazlar için daha fazla responsive */
+@media (max-width: 770px){
+    .card {
+        margin: 2% 0 !important;
+    }
+    
+}

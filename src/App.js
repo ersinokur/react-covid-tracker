@@ -4,7 +4,11 @@ import { fetchData } from "./api";
 //bu şekilde componentnlerimizi tek seferinde import edebiliyoruz.
 //tek sarti componenet klasöründe index.js
 import { Cards, Chart, CountryPicker } from "./components";
+
+import coronoImage from './assets/image.png';
+
 import styles from "./App.module.css";
+
 
 class App extends Component {
   state = {
@@ -39,7 +43,8 @@ class App extends Component {
 
     return (
       <div className={styles.container}>
-        <h1>App</h1>
+      <img className = {styles.image} src={coronoImage} alt="enough leave us! "/>
+        
         {/* crads comoentente data state'ini props olarak geçelim */}
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
