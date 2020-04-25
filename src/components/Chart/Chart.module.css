@@ -1,0 +1,6 @@
+.container{
+    display: flex;
+    justify-content: center;
+    /* grafiği büyümek için */
+    width: 85% 
+}
